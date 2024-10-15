@@ -20,7 +20,7 @@ const Slider = () => {
             description: "Sale! Up to 50% off!",
             img: "/blue.jpg",
             url: "/",
-            bg: "bg-gradient-to-r from-pink-50 to-yellow-50",
+            bg: "bg-gradient-to-r from-pink-50 to-blue-50",
         },
         {
             id: 3,
@@ -40,7 +40,7 @@ const Slider = () => {
         }, 3000)
 
         return () => clearInterval(interval)
-    }, [])
+    }, [current])
     
 
     return (

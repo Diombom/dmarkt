@@ -1,4 +1,4 @@
-const products = useState([
+const products = [
     {
         id: 1,
         title: "Party Cups",
@@ -119,6 +119,80 @@ const products = useState([
         image: '/electric_kettle.jpg',
         description: "Fast-heating electric kettle with auto-shutoff for safety."
     }
-]);
+];
 
-export { products }
+const featured = [
+    {
+        id: 13,
+        title: "Fitness Tracker",
+        price: 99.99,
+        availability: "Out of Stock",
+        image: '/fitness_tracker.jpg',
+        imageAlt: '/fitness_tracker-alt.jpg',
+        description: "Track your fitness goals with this sleek and easy-to-use fitness tracker."
+    },
+    {
+        id: 7,
+        title: "Water Bottle",
+        price: 15.20,
+        availability: "Available",
+        image: '/water_bottle.jpg',
+        imageAlt: '/water_bottle-alt.jpg',
+        description: "Stainless steel water bottle to keep your drinks cold or hot."
+    },
+    {
+        id: 4,
+        title: "Bluetooth Speaker",
+        price: 45.00,
+        availability: "Out of Stock",
+        image: '/bluetooth_speaker.jpg',
+        imageAlt: '/bluetooth_speaker-alt.jpg',
+        description: "Portable Bluetooth speaker with excellent sound quality."
+    },
+    {
+        id: 2,
+        title: "Headphones",
+        price: 119.99,
+        availability: "Available",
+        image: '/headphones.jpg',
+        imageAlt: '/headphones-alt.jpg',
+        description: "High-quality over-ear headphones with noise cancellation."
+    },
+]
+
+const newProducts = [
+    {
+        id: 15,
+        title: "Electric Kettle",
+        price: 24.99,
+        availability: "Available",
+        image: '/electric_kettle.jpg',
+        description: "Fast-heating electric kettle with auto-shutoff for safety."
+    },
+    {
+        id: 12,
+        title: "Portable Charger",
+        price: 39.99,
+        availability: "Available",
+        image: '/portable_charger.jpg',
+        description: "Compact portable charger to keep your devices powered on the go."
+    },
+    {
+        id: 9,
+        title: "Laptop Stand",
+        price: 29.99,
+        availability: "Out of Stock",
+        image: '/laptop_stand.jpg',
+        description: "Portable laptop stand, designed to improve ergonomics."
+    },
+    {
+        id: 5,
+        title: "Yoga Mat",
+        price: 30.75,
+        availability: "Available",
+        image: '/yoga_mat.jpg',
+        description: "Non-slip yoga mat, perfect for all your stretching routines."
+    },
+]
+
+export { products, featured, newProducts }

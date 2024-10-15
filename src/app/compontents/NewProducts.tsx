@@ -1,17 +1,14 @@
-"use client"
-
 import Image from "next/image"
 import Link from "next/link"
-import { featured } from '../constants/data'
+import { newProducts } from '../constants/data'
 
-const ProductList = () => {    
-
+const NewProducts = () => {
     return (
         <div className="flex mt-6 gap-x-8 gap-y-16 justify-between flex-wrap">
             {
-                featured.map(item => (
+                newProducts.map(item => (
                     <Link href="#" className="w-full flex flex-col gap-4 sm:w-[45%] lg:w-[22%]" key={item.id + item.title}>
-                        <div className="relative w-full h-60 group">
+                        <div className="relative w-full h-60">
                             <Image 
                                 className="absolute object-cover rounded-md shadow-md z-10 transition-opacity hover:opacity-0 duration-500" 
                                 src={"/products" + item.image} 
@@ -44,4 +41,4 @@ const ProductList = () => {
     )
 }
 
-export default ProductList
+export default NewProducts
