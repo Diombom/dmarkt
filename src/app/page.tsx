@@ -1,6 +1,12 @@
+import ProductList from "./compontents/ProductList"
+import Slider from "./compontents/Slider"
+
 const HomePage = () => {
   return (
-    <div className=''>HomePage</div>
+    <>
+      <Slider />
+      <ProductList />
+    </>
   )
 }
 
